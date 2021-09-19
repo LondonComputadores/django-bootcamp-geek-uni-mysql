@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app',
     'bootstrap4',
-    'stdimage',
 ]
 
 MIDDLEWARE = [
@@ -114,7 +113,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -128,3 +127,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT =  os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL = 'media/' # Must end with a /
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Mock email sendings with outputs on the console for Development
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Production
+"""
+EMAIL_HOST = 'localhost'
+EMAIL_HOST_USER = 'no-reply@yourdomain.com.br'
+EMAIL_PORT = 587
+EMAIL_USER_TSL = True 
+EMAIL_HOST_PASSWORD = 'yourpassword'
+"""

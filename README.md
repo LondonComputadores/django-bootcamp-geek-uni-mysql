@@ -15,7 +15,8 @@ Terminal's issued commands:
 
 - $ python -m venv venv
 - $ source venv/bin/activate
-- $ pip install django whitenoise gunicorn django-bootstrap4 PyMySQL django-stdimage
+- $ pip install django whitenoise gunicorn django-bootstrap4 PyMySQL
+MySQL libmysqlclient-dev
 - $ pip freeze > requirements.txt
 - $ django-admin startproject django2 .
 - $ python manage.py startapp app
@@ -27,6 +28,16 @@ Terminal's issued commands:
     - >>> from django import forms
     - >>> dir(forms)
     - >>> help(forms.CharField)
+    - >>> help(forms.Form.is_valid)
+    - >>> from django.db.models import signals
+    - >>> dir(signals)
+    - >>> help(signals.pre_save)
+    - >>> from django.template.defaultfilters import slugify
+    - >>> dir(slugify)
+    - >>> help(slugify.is_safe)
+    - >>> name = 'Alexandre Paes'
+    - >>> slugify(name)
+    - >>> 'alexandre-paes'
 )
 
 
