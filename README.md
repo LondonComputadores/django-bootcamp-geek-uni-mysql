@@ -9,7 +9,7 @@ This is a Django Bootcamp from Udemy by Geek University as a Recap where will be
 #### Link Application 3: https://github.com/LondonComputadores/django-bootcamp-geek-uni-postgresql
 
 
-## What's going on Application 1: Django Basics Recap
+## What's going on Application 2: Django Intermediate Recap
 
 Terminal's issued commands:
 
